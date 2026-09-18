@@ -4,25 +4,43 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-   
-
+    <img src ="https://static.vecteezy.com/system/resources/thumbnails/010/988/067/small_2x/watercolor-magic-ball-clip-art-png.png" height="200" width="200">
+ 
     <title>Fortune Teller</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="background-color: rgb(62, 62, 152);">
     <!-- this is the start of content -->
-    <h1>
-      Fortune Teller
-    </h1>
+    <h1> Fortune Teller!!!</h1>
+    <h3> Will you have a good future?</h3>
     <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
-      <label for="namefield">Name:</label>
-      <input type="text" id="namefield" name="name" placeholder="your name" required>
-      <br>
-      <label for="questionfield">Question:</label>
-      <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
-      <br>
+      <label for="namefield"> Name: </label> <input type="text"size="40"  id="namefield" name="name" placeholder="your name" required> <br><br>
+      <label> When is your birthday?</label> <input type="date" required > <br><br>
+      
+      <label for="questionfield">Have you ever been in love? : </label> <input type="text" id="questionfield" name="question" placeholder="a yes or no question" required> <br><br>
+       
+      <label> What's your favorite number? </label><input type="number" required><br><br>
+      
+     <label for="favcolor">What's your favorite color? </label> <input type="color" id="favcolor" name="favcolor" required> <br><br>
+     <label> Do you have a pet?</label>
+     <select required>
+     <option>Yes!</option>
+     <option>No I hate animals</option>
+     <option>I wish</option>
+     <option>Sorta</option>
+     </select> <br> <br>
+      <label> Which of these apply to you?</label> 
+      <br><input type="checkbox"><label for="c1"> I have a job</label><br>
+      <input type="checkbox" > <label for="c2"> I have a car</label><br>
+      <input type="checkbox"> <label for="c3"> I'm in school</label> <br>
+      <input type="checkbox"> <label for="c3"> I can drive</label> <br>
+    <input type="checkbox"> <label for="c3"> I can cook</label> <br>
+    <input type="checkbox"> <label for="c3"> I can clean</label> <br> <br>
+    <label for="comments">What are you expecting? </label> <textarea id="comments" name="comments" rows="1" cols="10"></textarea> <br> <br>
+     <label>Are you ready for your fortune? </label> <input type="button" onclick="alert('Okay!! Click submit!!!')" value="Yes I'm ready!!"> <br> <br>
+
       <input type="submit">
     </form>
     <div id="fortune"></div>
